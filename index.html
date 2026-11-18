@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Diego Barroso | Estilo, Precisão & Tradição em Vilhena - RO</title>
+    <meta name="description" content="Barbearia Diego Barroso em Vilhena - RO (Altamira). 5,0 estrelas com +501 avaliações no Google. Corte masculino, barboterapia, combos e agendamento rápido pelo WhatsApp (69) 99328-1504.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Cinzel, Oswald & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        display: ['Oswald', 'sans-serif'],
+                        serif: ['Cinzel', 'serif'],
+                    },
+                    colors: {
+                        obsidian: {
+                            950: '#09090B',
+                            900: '#111114',
+                            850: '#16161B',
+                            800: '#1F1F26',
+                        },
+                        gold: {
+                            300: '#F3D08A',
+                            400: '#E2B45B',
+                            500: '#C8963E',
+                            600: '#A67628',
+                            700: '#825A1C',
+                        },
+                        copper: {
+                            400: '#D97736',
+                            500: '#B85D22',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #09090B;
+            color: #F4F4F5;
+            overflow-x: hidden;
+        }
+        .glass-nav {
+            background: rgba(9, 9, 11, 0.88);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #F3D08A 0%, #C8963E 50%, #D97736 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-btn {
+            background: linear-gradient(135deg, #D4A146 0%, #B37E29 100%);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .gold-btn:hover {
+            background: linear-gradient(135deg, #E2B45B 0%, #C8963E 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 28px -8px rgba(200, 150, 62, 0.45);
+        }
+        .card-barber {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-barber:hover {
+            transform: translateY(-5px);
+            border-color: rgba(200, 150, 62, 0.55);
+            box-shadow: 0 20px 40px -15px rgba(200, 150, 62, 0.16);
+        }
+        @keyframes pulse-ring {
+            0% { transform: scale(0.95); opacity: 0.75; }
+            75% { transform: scale(1.3); opacity: 0; }
+            100% { transform: scale(1.3); opacity: 0; }
+        }
+        .wa-pulse::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 9999px;
+            background-color: #25D366;
+            z-index: -1;
+            animation: pulse-ring 2s infinite;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-gold-500 selection:text-obsidian-950">
+
+    <!-- TOP BAR DE CREDIBILIDADE & CONTATO RÁPIDO -->
+    <div class="bg-obsidian-900 border-b border-zinc-800/90 text-xs py-2.5 px-4">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+            <div class="flex items-center gap-4">
+                <span class="inline-flex items-center gap-1.5 font-semibold text-gold-400">
+                    <i class="fa-solid fa-star text-amber-400"></i>
+                    5,0 Estrelas • +501 Avaliações Reais no Google
+                </span>
+                <span class="hidden md:inline-flex items-center gap-1.5 text-zinc-400">
+                    <i class="fa-solid fa-location-dot text-gold-500"></i>
+                    Tv. 816, 6425 - Altamira, Vilhena - RO
+                </span>
+            </div>
+            <div class="flex items-center gap-4 ml-auto sm:ml-0">
+                <a href="https://instagram.com/diegobarroso4" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-zinc-300 hover:text-gold-400 transition font-medium">
+                    <i class="fa-brands fa-instagram text-copper-400"></i>
+                    @diegobarroso4
+                </a>
+                <a href="https://wa.me/5569993281504?text=Ol%C3%A1%20Diego!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Barbearia%20Diego%20Barroso." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-zinc-300 hover:text-emerald-400 transition font-medium">
+                    <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                    (69) 99328-1504
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER FIXO -->
+    <header class="sticky top-0 z-50 glass-nav border-b border-zinc-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 sm:h-20">
+                <!-- Logo Tipográfico -->
+                <a href="#inicio" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-br from-gold-400 via-gold-500 to-copper-500 flex items-center justify-center text-obsidian-950 shadow-lg shadow-gold-500/20 group-hover:scale-105 transition">
+                        <i class="fa-solid fa-scissors text-lg"></i>
+                    </div>
+                    <div>
+                        <span class="font-display font-bold text-lg sm:text-2xl tracking-wider text-white block leading-none uppercase">
+                            DIEGO <span class="text-gold-400">BARROSO</span>
+                        </span>
+                        <span class="text-[10px] font-serif uppercase tracking-[0.28em] text-zinc-400 font-semibold block mt-0.5">
+                            BARBEARIA • VILHENA - RO
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Navegação Desktop -->
+                <nav class="hidden lg:flex items-center gap-8 text-xs font-bold uppercase tracking-widest text-zinc-300">
+                    <a href="#servicos" class="hover:text-gold-400 transition">Serviços</a>
+                    <a href="#agendar" class="hover:text-gold-400 transition">Agendamento Rápido</a>
+                    <a href="#avaliacoes" class="hover:text-gold-400 transition">501 Avaliações 5★</a>
+                    <a href="#localizacao" class="hover:text-gold-400 transition">Horários & Local</a>
+                </nav>
+
+                <!-- Botão Dourado CTA -->
+                <div class="flex items-center gap-2.5 sm:gap-3">
+                    <a href="https://instagram.com/diegobarroso4" target="_blank" rel="noopener noreferrer"
+                       aria-label="Instagram @diegobarroso4"
+                       class="w-10 h-10 rounded-xl bg-obsidian-800 hover:bg-zinc-800 text-gold-400 border border-zinc-700/80 flex items-center justify-center transition">
+                        <i class="fa-brands fa-instagram text-lg"></i>
+                    </a>
+                    <a href="https://wa.me/5569993281504?text=Ol%C3%A1%20Diego!%20Vim%20pelo%20site%20e%20quero%20agendar%20meu%20hor%C3%A1rio%20na%20Barbearia%20Diego%20Barroso."
+                       target="_blank" rel="noopener noreferrer"
+                       class="gold-btn text-obsidian-950 font-display font-bold uppercase tracking-wider text-xs sm:text-sm px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl inline-flex items-center gap-2 shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Agendar Horário</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION DE ALTO IMPACTO -->
+    <section id="inicio" class="relative min-h-[86vh] flex items-center overflow-hidden border-b border-zinc-800/80">
+        <!-- Imagem de Fundo Escura Premium (Unsplash) -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1920&q=80"
+                 onerror="this.src='https://placehold.co/1920x1080/111114/C8963E?text=Barbearia+Diego+Barroso'"
+                 alt="Barbearia Diego Barroso Vilhena RO"
+                 class="w-full h-full object-cover object-center opacity-35 scale-105">
+            <div class="absolute inset-0 bg-gradient-to-r from-obsidian-950 via-obsidian-950/90 to-obsidian-950/65"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-transparent to-obsidian-950/70"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 w-full">
+            <div class="max-w-3xl">
+                <!-- Selo de Autoridade Máxima Google -->
+                <div class="inline-flex flex-wrap items-center gap-2.5 bg-obsidian-900/95 border border-gold-500/40 px-4 py-2 rounded-full mb-7 shadow-xl">
+                    <div class="flex items-center gap-0.5 text-amber-400 text-xs">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span class="text-xs font-bold tracking-wider uppercase text-gold-300">
+                        5,0 ESTRELAS (501 AVALIAÇÕES NO GOOGLE)
+                    </span>
+                </div>
+
+                <h1 class="font-display font-bold text-4xl sm:text-6xl lg:text-7xl text-white uppercase leading-[1.03] tracking-tight mb-6">
+                    Estilo, Precisão & Tradição no <span class="gold-gradient-text">Altamira</span> em Vilhena.
+                </h1>
+
+                <p class="text-base sm:text-xl text-zinc-300 max-w-2xl leading-relaxed mb-9 font-normal">
+                    A barbearia nota máxima de Vilhena - RO. Cortes modernos, degradê navalhado impecável, barboterapia com toalha quente e atendimento pontual na <strong class="text-white">Barbearia Diego Barroso</strong>.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                    <a href="https://wa.me/5569993281504?text=Ol%C3%A1%20Diego!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Barbearia%20Diego%20Barroso."
+                       target="_blank" rel="noopener noreferrer"
+                       class="gold-btn text-obsidian-950 font-display font-bold uppercase tracking-wider text-sm sm:text-base px-8 py-4 rounded-2xl inline-flex items-center justify-center gap-2.5 shadow-xl">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        Agendar pelo WhatsApp Agora
+                    </a>
+                    <a href="#agendar"
+                       class="bg-obsidian-900/90 hover:bg-obsidian-800 text-white border border-gold-500/40 font-display font-bold uppercase tracking-wider text-sm sm:text-base px-8 py-4 rounded-2xl inline-flex items-center justify-center gap-2.5 transition">
+                        <i class="fa-regular fa-calendar-check text-gold-400"></i>
+                        Escolher Dia e Horário
+                    </a>
+                </div>
+
+                <!-- Micro-info rápida -->
+                <div class="mt-10 pt-6 border-t border-zinc-800/80 flex flex-wrap items-center gap-6 text-xs text-zinc-400">
+                    <span class="inline-flex items-center gap-2">
+                        <i class="fa-regular fa-clock text-gold-400"></i>
+                        Seg a Sex: 08:30–12:00 / 14:00–19:00
+                    </span>
+                    <span class="inline-flex items-center gap-2">
+                        <i class="fa-regular fa-clock text-copper-400"></i>
+                        Sábado: 08:30–12:00
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BARRA DE CREDIBILIDADE (4 MÉTRICAS) -->
+    <section class="bg-obsidian-900 border-b border-zinc-800/90 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="flex items-center gap-4 bg-obsidian-950/70 border border-zinc-800/80 p-5 rounded-2xl">
+                    <div class="w-12 h-12 rounded-xl bg-gold-500/15 border border-gold-500/30 text-gold-400 flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <div>
+                        <span class="font-display font-bold text-xl text-white block leading-tight">+501 Avaliações 5★</span>
+                        <span class="text-xs text-zinc-400">Nota máxima 5,0 no Google</span>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4 bg-obsidian-950/70 border border-zinc-800/80 p-5 rounded-2xl">
+                    <div class="w-12 h-12 rounded-xl bg-copper-500/15 border border-copper-500/30 text-copper-400 flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-user-check"></i>
+                    </div>
+                    <div>
+                        <span class="font-display font-bold text-xl text-white block leading-tight">Atendimento VIP</span>
+                        <span class="text-xs text-zinc-400">Consultoria visagista & precisão</span>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4 bg-obsidian-950/70 border border-zinc-800/80 p-5 rounded-2xl">
+                    <div class="w-12 h-12 rounded-xl bg-gold-500/15 border border-gold-500/30 text-gold-400 flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-snowflake"></i>
+                    </div>
+                    <div>
+                        <span class="font-display font-bold text-xl text-white block leading-tight">Ambiente Climatizado</span>
+                        <span class="text-xs text-zinc-400">Conforto, música e boa resenha</span>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4 bg-obsidian-950/70 border border-zinc-800/80 p-5 rounded-2xl">
+                    <div class="w-12 h-12 rounded-xl bg-copper-500/15 border border-copper-500/30 text-copper-400 flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <div>
+                        <span class="font-display font-bold text-xl text-white block leading-tight">Fácil Acesso Altamira</span>
+                        <span class="text-xs text-zinc-400">Tv. 816, 6425 • Vilhena - RO</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATÁLOGO DE SERVIÇOS & COMBOS -->
+    <section id="servicos" class="py-20 sm:py-28 bg-obsidian-950 border-b border-zinc-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-gold-400 font-bold text-xs uppercase tracking-[0.25em]">Menu de Serviços</span>
+                <h2 class="font-display font-bold text-3xl sm:text-5xl text-white uppercase mt-2">
+                    Cortes, Barba & Combos Exclusivos
+                </h2>
+                <p class="text-zinc-400 text-sm sm:text-base mt-3">
+                    Selecione o serviço desejado e envie sua solicitação direto para o WhatsApp da barbearia com 1 clique.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+                <!-- Serviço 1: Corte Masculino -->
+                <article class="card-barber bg-obsidian-900 border border-zinc-800 rounded-3xl p-7 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-5">
+                            <div class="w-12 h-12 rounded-2xl bg-gold-500/15 border border-gold-500/30 text-gold-400 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-scissors"></i>
+                            </div>
+                            <span class="text-[11px] font-bold uppercase tracking-wider text-gold-300 bg-gold-500/10 border border-gold-500/30 px-3 py-1 rounded-full">
+                                Mais Pedido
+                            </span>
+                        </div>
+                        <h3 class="font-display font-bold text-2xl text-white uppercase tracking-wide">
+                            Corte Masculino
+                        </h3>
+                        <p class="text-zinc-400 text-sm leading-relaxed mt-2.5">
+                            Degradê (fade) limpo, corte social clássico, navalhado ou corte completo na tesoura com finalização e pomada modeladora.
+                        </p>
+                        <ul class="mt-4 space-y-2 text-xs text-zinc-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-400"></i> Degradê High, Mid ou Low Fade</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-400"></i> Social, Militar ou Tesoura</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-400"></i> Finalização profissional</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/5569993281504?text=Ol%C3%A1%20Diego!%20Quero%20agendar%20um%20*Corte%20Masculino*%20na%20Barbearia%20Diego%20Barroso."
+                       target="_blank" rel="noopener noreferrer"
+                       class="mt-7 w-full bg-obsidian-800 hover:bg-gold-500 hover:text-obsidian-950 text-gold-300 border border-gold-500/40 font-display font-bold uppercase tracking-wider text-xs py-3.5 rounded-xl inline-flex items-center justify-center gap-2 transition">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        Agendar este serviço
+                    </a>
+                </article>
+
+                <!-- Serviço 2: Barba Tradicional & Barboterapia -->
+                <article class="card-barber bg-obsidian-900 border border-zinc-800 rounded-3xl p-7 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-5">
+                            <div class="w-12 h-12 rounded-2xl bg-copper-500/15 border border-copper-500/30 text-copper-400 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-fire-flame-curved"></i>
+                            </div>
+                            <span class="text-[11px] font-bold uppercase tracking-wider text-copper-400 bg-copper-500/10 border border-copper-500/30 px-3 py-1 rounded-full">
+                                Toalha Quente
+                            </span>
+                        </div>
+                        <h3 class="font-display font-bold text-2xl text-white uppercase tracking-wide">
+                            Barba & Barboterapia
+                        </h3>
+                        <p class="text-zinc-400 text-sm leading-relaxed mt-2.5">
+                            Alinhamento simétrico na navalha com ritual de toalha quente, abertura dos poros, esfoliação suave e óleo hidratante.
+                        </p>
+                        <ul class="mt-4 space-y-2 text-xs text-zinc-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-copper-400"></i> Ritual relaxante com toalha quente</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-copper-400"></i> Desenho e alinhamento na navalha</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-copper-400"></i> Hidratação pós-barba refrescante</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/5569993281504?text=Ol%C3%A1%20Diego!%20Quero%20agendar%20*Barba%20Tradicional%20%2F%20Barboterapia*%20na%20Barbearia%20Diego%20Barroso."
+                       target="_blank" rel="noopener noreferrer"
+                       class="mt-7 w-full bg-obsidian-800 hover:bg-gold-500 hover:text-obsidian-950 text-gold-300 border border-gold-500/40 font-display font-bold uppercase tracking-wider text-xs py-3.5 rounded-xl inline-flex items-center justify-center gap-2 transition">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        Agendar este serviço
+                    </a>
+                </article>
+
+                <!-- Serviço 3: Combo Completo (Destaque Dourado) -->
+                <article class="card-barber bg-gradient-to-b from-gold-600/20 via-obsidian-900 to-obsidian-900 border-2 border-gold-500 rounded-3xl p-7 flex flex-col justify-between relative shadow-2xl shadow-gold-500/10">
+                    <div class="absolute -top-3.5 right-6 bg-gold-500 text-obsidian-950 font-display font-bold uppercase tracking-widest text-[10px] px-3.5 py-1 rounded-full shadow-md">
+                        Experiência Completa
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between mb-5">
+                            <div class="w-12 h-12 rounded-2xl bg-gold-500 text-obsidian-950 flex items-center justify-center text-xl shadow-md">
+                                <i class="fa-solid fa-crown"></i>
+                            </div>
+                            <span class="text-[11px] font-bold uppercase tracking-wider text-gold-300">
+                                3 em 1
+                            </span>
+                        </div>
+                        <h3 class="font-display font-bold text-2xl text-white uppercase tracking-wide">
+                            Combo Completo
+                        </h3>
+                        <p class="text-zinc-300 text-sm leading-relaxed mt-2.5">
+                            O pacote definitivo para sair renovado: <strong class="text-gold-300">Corte + Barba + Sobrancelha</strong> com atendimento completo e atenção total aos detalhes.
+                        </p>
+                        <ul class="mt-4 space-y-2 text-xs text-zinc-200">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-400"></i> Corte Masculino completo</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-400"></i> Barba alinhada + toalha quente</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-400"></i> Sobrancelha limpa na navalha</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/5569993281504?text=Ol%C3%A1%20Diego!%20Quero%20agendar%20o%20*Combo%20Completo%20(Corte%20%2B%20Barba%20%2B%20Sobrancelha)*%20na%20Barbearia%20Diego%20Barroso."
+                       target="_blank" rel="noopener noreferrer"
+                       class="mt-7 w-full gold-btn text-obsidian-950 font-display font-bold uppercase tracking-wider text-xs py-3.5 rounded-xl inline-flex items-center justify-center gap-2 shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        Agendar Combo Completo
+                    </a>
+                </article>
+
+                <!-- Serviço 4: Acabamento / Pezinho & Sobrancelha -->
+                <article class="card-barber bg-obsidian-900 border border-zinc-800 rounded-3xl p-7 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-5">
+                            <div class="w-12 h-12 rounded-2xl bg-gold-500/15 border border-gold-500/30 text-gold-400 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </div>
+                            <span class="text-[11px] font-bold uppercase tracking-wider text-zinc-400">
+                                Manutenção
+                            </span>
+                        </div>
+                        <h3 class="font-display font-bold text-2xl text-white uppercase tracking-wide">
+                            Pezinho & Sobrancelha
+                        </h3>
+                        <p class="text-zinc-400 text-sm leading-relaxed mt-2.5">
+                            Acabamento cirúrgico nos contornos do cabelo e limpeza natural da sobrancelha na navalha para manter o visual alinhado na semana.
+                        </p>
+                        <ul class="mt-4 space-y-2 text-xs text-zinc-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-400"></i> Contorno preciso na navalha</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-400"></i> Sobrancelha masculina sem exageros</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-400"></i> Atendimento ágil e pontual</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/5569993281504?text=Ol%C3%A1%20Diego!%20Quero%20agendar%20*Acabamento%20%2F%20Pezinho%20%26%20Sobrancelha*%20na%20Barbearia%20Diego%20Barroso."
+                       target="_blank" rel="noopener noreferrer"
+                       class="mt-7 w-full bg-obsidian-800 hover:bg-gold-500 hover:text-obsidian-950 text-gold-300 border border-gold-500/40 font-display font-bold uppercase tracking-wider text-xs py-3.5 rounded-xl inline-flex items-center justify-center gap-2 transition">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        Agendar este serviço
+                    </a>
+                </article>
+
+                <!-- Serviço 5: Corte Infantil -->
+                <article class="card-barber bg-obsidian-900 border border-zinc-800 rounded-3xl p-7 flex flex-col justify-between md:col-span-2 lg:col-span-2">
+                    <div class="grid sm:grid-cols-12 gap-6 items-center">
+                        <div class="sm:col-span-8">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-12 h-12 rounded-2xl bg-copper-500/15 border border-copper-500/30 text-copper-400 flex items-center justify-center text-xl">
+                                    <i class="fa-solid fa-child-reaching"></i>
+                                </div>
+                                <span class="text-[11px] font-bold uppercase tracking-wider text-copper-400 bg-copper-500/10 border border-copper-500/30 px-3 py-1 rounded-full">
+                                    Pai & Filho
+                                </span>
+                            </div>
+                            <h3 class="font-display font-bold text-2xl text-white uppercase tracking-wide">
+                                Corte Infantil
+                            </h3>
+                            <p class="text-zinc-400 text-sm leading-relaxed mt-2">
+                                Paciência, cuidado e estilo para os pequenos saírem com o visual impecável. Ambiente familiar e acolhedor no bairro Altamira para trazer seu filho com total tranquilidade.
+                            </p>
+                        </div>
+                        <div class="sm:col-span-4 flex flex-col justify-end">
+                            <a href="https://wa.me/5569993281504?text=Ol%C3%A1%20Diego!%20Quero%20agendar%20um%20*Corte%20Infantil*%20na%20Barbearia%20Diego%20Barroso."
+                               target="_blank" rel="noopener noreferrer"
+                               class="w-full bg-obsidian-800 hover:bg-gold-500 hover:text-obsidian-950 text-gold-300 border border-gold-500/40 font-display font-bold uppercase tracking-wider text-xs py-4 px-4 rounded-xl inline-flex items-center justify-center gap-2 transition text-center">
+                                <i class="fa-brands fa-whatsapp text-base"></i>
+                                Agendar Corte Infantil
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- AGENDADOR RÁPIDO INTERATIVO -->
+    <section id="agendar" class="py-20 sm:py-28 bg-obsidian-900 border-b border-zinc-800/80 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-gold-400 font-bold text-xs uppercase tracking-[0.25em]">Sem Filas • Sem Espera</span>
+                <h2 class="font-display font-bold text-3xl sm:text-5xl text-white uppercase mt-2">
+                    Agendamento Rápido Online
+                </h2>
+                <p class="text-zinc-400 text-sm sm:text-base mt-3">
+                    Monte seu horário abaixo e envie a mensagem já formatada direto para o WhatsApp <strong class="text-white">(69) 99328-1504</strong>.
+                </p>
+            </div>
+
+            <form id="booking-form" onsubmit="handleBookingSubmit(event)" class="bg-obsidian-950 border border-gold-500/35 rounded-3xl p-6 sm:p-10 shadow-2xl space-y-6">
+                <div class="grid sm:grid-cols-2 gap-6">
+                    <!-- Nome do Cliente -->
+                    <div>
+                        <label for="client-name" class="block text-xs font-bold uppercase tracking-wider text-gold-300 mb-2">
+                            1. Seu Nome
+                        </label>
+                        <input type="text" id="client-name" required placeholder="Digite seu nome..."
+                               class="w-full bg-obsidian-900 border border-zinc-700 focus:border-gold-400 rounded-xl px-4 py-3.5 text-sm text-white placeholder-zinc-500 outline-none transition">
+                    </div>
+
+                    <!-- Serviço -->
+                    <div>
+                        <label for="service-select" class="block text-xs font-bold uppercase tracking-wider text-gold-300 mb-2">
+                            2. Escolha o Serviço
+                        </label>
+                        <select id="service-select"
+                                class="w-full bg-obsidian-900 border border-zinc-700 focus:border-gold-400 rounded-xl px-4 py-3.5 text-sm text-white outline-none transition">
+                            <option value="Combo Completo (Corte + Barba + Sobrancelha)">Combo Completo (Corte + Barba + Sobrancelha)</option>
+                            <option value="Corte Masculino (Degradê / Social / Navalhado)">Corte Masculino (Degradê / Social / Navalhado)</option>
+                            <option value="Barba Tradicional & Barboterapia">Barba Tradicional & Barboterapia</option>
+                            <option value="Acabamento / Pezinho & Sobrancelha">Acabamento / Pezinho & Sobrancelha</option>
+                            <option value="Corte Infantil">Corte Infantil</option>
+                        </select>
+                    </div>
+
+                    <!-- Dia da Semana -->
+                    <div>
+                        <label for="day-select" class="block text-xs font-bold uppercase tracking-wider text-gold-300 mb-2">
+                            3. Dia da Semana
+                        </label>
+                        <select id="day-select" onchange="updateShiftOptions()"
+                                class="w-full bg-obsidian-900 border border-zinc-700 focus:border-gold-400 rounded-xl px-4 py-3.5 text-sm text-white outline-none transition">
+                            <option value="Segunda-feira">Segunda-feira</option>
+                            <option value="Terça-feira">Terça-feira</option>
+                            <option value="Quarta-feira">Quarta-feira</option>
+                            <option value="Quinta-feira">Quinta-feira</option>
+                            <option value="Sexta-feira">Sexta-feira</option>
+                            <option value="Sábado">Sábado (Aberto somente manhã)</option>
+                        </select>
+                    </div>
+
+                    <!-- Turno / Horário -->
+                    <div>
+                        <label for="shift-select" class="block text-xs font-bold uppercase tracking-wider text-gold-300 mb-2">
+                            4. Turno Preferido
+                        </label>
+                        <select id="shift-select"
+                                class="w-full bg-obsidian-900 border border-zinc-700 focus:border-gold-400 rounded-xl px-4 py-3.5 text-sm text-white outline-none transition">
+                            <option value="Manhã (entre 08:30 e 12:00)">Manhã (entre 08:30 e 12:00)</option>
+                            <option value="Tarde (entre 14:00 e 19:00)">Tarde (entre 14:00 e 19:00)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Observação opcional -->
+                <div>
+                    <label for="booking-notes" class="block text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2">
+                        Horário exato ou observação (opcional)
+                    </label>
+                    <input type="text" id="booking-notes" placeholder="Ex: Gostaria de encaixar às 16:30..."
+                           class="w-full bg-obsidian-900 border border-zinc-700 focus:border-gold-400 rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-500 outline-none transition">
+                </div>
+
+                <div class="pt-2">
+                    <button type="submit"
+                            class="w-full gold-btn text-obsidian-950 font-display font-bold uppercase tracking-wider text-base py-4 rounded-2xl inline-flex items-center justify-center gap-3 shadow-xl">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        Confirmar Horário no WhatsApp (69) 99328-1504
+                    </button>
+                    <p class="text-center text-xs text-zinc-500 mt-3">
+                        Você será redirecionado diretamente para o WhatsApp oficial do Diego Barroso com sua solicitação pronta.
+                    </p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- PROVA SOCIAL: 501 AVALIAÇÕES 5 ESTRELAS NO GOOGLE -->
+    <section id="avaliacoes" class="py-20 sm:py-28 bg-obsidian-950 border-b border-zinc-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16">
+                <div>
+                    <span class="text-gold-400 font-bold text-xs uppercase tracking-[0.25em]">Reputação Comprovada</span>
+                    <h2 class="font-display font-bold text-3xl sm:text-5xl text-white uppercase mt-2">
+                        Nota Máxima 5,0 no Google
+                    </h2>
+                    <p class="text-zinc-400 text-sm sm:text-base mt-3 max-w-xl">
+                        Mais de <strong class="text-white">501 clientes satisfeitos</strong> em Vilhena - RO recomendam a precisão do corte, a pontualidade e o ambiente da Barbearia Diego Barroso.
+                    </p>
+                </div>
+
+                <!-- Card Destaque Google 5.0 -->
+                <div class="bg-obsidian-900 border border-gold-500/40 rounded-2xl px-6 py-4 flex items-center gap-4 self-start lg:self-auto shadow-lg">
+                    <div class="text-3xl font-display font-bold text-white">5,0</div>
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="text-xs text-zinc-300 font-semibold block mt-0.5">+501 Avaliações Reais • Google</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid de Depoimentos -->
+            <div class="grid md:grid-cols-3 gap-7">
+                <div class="bg-obsidian-900 border border-zinc-800 rounded-3xl p-7 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center gap-1 text-amber-400 text-xs">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="text-[11px] text-zinc-500 font-medium">Avaliação Google</span>
+                        </div>
+                        <p class="text-zinc-300 text-sm leading-relaxed italic">
+                            "Melhor barbearia de Vilhena sem dúvida! Degradê sempre impecável, pontualidade nota mil no horário agendado e ambiente muito top no Altamira."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 mt-6 pt-5 border-t border-zinc-800/80">
+                        <div class="w-10 h-10 rounded-full bg-gold-500/20 text-gold-400 font-display font-bold flex items-center justify-center text-sm">
+                            LS
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">Lucas Santana</h4>
+                            <span class="text-xs text-zinc-400">Cliente Frequente • Vilhena - RO</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-obsidian-900 border border-zinc-800 rounded-3xl p-7 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center gap-1 text-amber-400 text-xs">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="text-[11px] text-zinc-500 font-medium">Avaliação Google</span>
+                        </div>
+                        <p class="text-zinc-300 text-sm leading-relaxed italic">
+                            "Atendimento diferenciado do Diego! Fiz o combo de corte e barba com toalha quente e o acabamento ficou perfeito. Não troco por outra barbearia."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 mt-6 pt-5 border-t border-zinc-800/80">
+                        <div class="w-10 h-10 rounded-full bg-copper-500/20 text-copper-400 font-display font-bold flex items-center justify-center text-sm">
+                            MO
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">Matheus Oliveira</h4>
+                            <span class="text-xs text-zinc-400">Cliente Verificado • Google</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-obsidian-900 border border-zinc-800 rounded-3xl p-7 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center gap-1 text-amber-400 text-xs">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="text-[11px] text-zinc-500 font-medium">Avaliação Google</span>
+                        </div>
+                        <p class="text-zinc-300 text-sm leading-relaxed italic">
+                            "Profissionalismo de alto nível. Levo meu filho também e o cuidado com o corte infantil é excelente. Merece demais as 5 estrelas!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 mt-6 pt-5 border-t border-zinc-800/80">
+                        <div class="w-10 h-10 rounded-full bg-gold-500/20 text-gold-400 font-display font-bold flex items-center justify-center text-sm">
+                            GR
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">Gabriel Ribeiro</h4>
+                            <span class="text-xs text-zinc-400">Cliente Verificado • Google</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCALIZAÇÃO E HORÁRIOS DE FUNCIONAMENTO -->
+    <section id="localizacao" class="py-20 sm:py-28 bg-obsidian-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-gold-400 font-bold text-xs uppercase tracking-[0.25em]">Onde Estamos</span>
+                <h2 class="font-display font-bold text-3xl sm:text-5xl text-white uppercase mt-2">
+                    Horários & Localização
+                </h2>
+                <p class="text-zinc-400 text-sm sm:text-base mt-3">
+                    Fácil acesso no bairro Altamira em Vilhena - Rondônia. Confira nossos horários e trace sua rota.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-8 items-stretch">
+                <!-- Card de Horários de Funcionamento -->
+                <div class="lg:col-span-6 bg-obsidian-950 border border-zinc-800 rounded-3xl p-7 sm:p-9 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-3 mb-6">
+                            <div class="flex items-center gap-3">
+                                <div class="w-11 h-11 rounded-xl bg-gold-500/15 border border-gold-500/30 text-gold-400 flex items-center justify-center text-lg">
+                                    <i class="fa-regular fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-display font-bold text-2xl text-white uppercase">Horário de Atendimento</h3>
+                                    <span id="live-status-badge" class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400 mt-0.5">
+                                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                                        Verificando horário...
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="divide-y divide-zinc-800/80 text-sm">
+                            <div class="py-3.5 flex items-center justify-between">
+                                <span class="font-semibold text-zinc-200">Segunda-feira</span>
+                                <span class="text-gold-300 font-medium">08:30 às 12:00 • 14:00 às 19:00</span>
+                            </div>
+                            <div class="py-3.5 flex items-center justify-between">
+                                <span class="font-semibold text-zinc-200">Terça-feira</span>
+                                <span class="text-gold-300 font-medium">08:30 às 12:00 • 14:00 às 19:00</span>
+                            </div>
+                            <div class="py-3.5 flex items-center justify-between">
+                                <span class="font-semibold text-zinc-200">Quarta-feira</span>
+                                <span class="text-gold-300 font-medium">08:30 às 12:00 • 14:00 às 19:00</span>
+                            </div>
+                            <div class="py-3.5 flex items-center justify-between">
+                                <span class="font-semibold text-zinc-200">Quinta-feira</span>
+                                <span class="text-gold-300 font-medium">08:30 às 12:00 • 14:00 às 19:00</span>
+                            </div>
+                            <div class="py-3.5 flex items-center justify-between">
+                                <span class="font-semibold text-zinc-200">Sexta-feira</span>
+                                <span class="text-gold-300 font-medium">08:30 às 12:00 • 14:00 às 19:00</span>
+                            </div>
+                            <div class="py-3.5 flex items-center justify-between">
+                                <span class="font-semibold text-zinc-200">Sábado</span>
+                                <span class="text-copper-400 font-semibold">08:30 às 12:00</span>
+                            </div>
+                            <div class="py-3.5 flex items-center justify-between">
+                                <span class="font-semibold text-zinc-500">Domingo</span>
+                                <span class="text-zinc-500 font-semibold uppercase text-xs tracking-wider">Fechado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card de Endereço & Google Maps -->
+                <div class="lg:col-span-6 bg-obsidian-950 border border-zinc-800 rounded-3xl p-7 sm:p-9 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-11 h-11 rounded-xl bg-copper-500/15 border border-copper-500/30 text-copper-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-display font-bold text-2xl text-white uppercase">Endereço Oficial</h3>
+                                <span class="text-xs text-zinc-400">Bairro Altamira • Vilhena - Rondônia</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-obsidian-900 border border-zinc-800 rounded-2xl p-5 mb-6">
+                            <p class="text-white font-semibold text-base">
+                                Tv. 816, 6425 - Altamira
+                            </p>
+                            <p class="text-zinc-400 text-sm mt-1">
+                                Vilhena - Rondônia, CEP 76985-320
+                            </p>
+                            <button onclick="copyAddress()" class="mt-3 inline-flex items-center gap-2 text-xs font-bold text-gold-400 hover:text-gold-300 transition">
+                                <i class="fa-regular fa-copy"></i>
+                                <span id="copy-address-text">Copiar endereço completo</span>
+                            </button>
+                        </div>
+
+                        <!-- Mapa Embed Responsivo -->
+                        <div class="rounded-2xl overflow-hidden border border-zinc-800 h-52 bg-obsidian-900">
+                            <iframe
+                                title="Mapa Barbearia Diego Barroso Vilhena RO"
+                                src="https://maps.google.com/maps?q=Tv.%20816,%206425%20-%20Altamira,%20Vilhena%20-%20RO,%2076985-320&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                                class="w-full h-full border-0 grayscale contrast-125 opacity-85"
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 grid sm:grid-cols-2 gap-3">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Tv.+816,+6425+-+Altamira,+Vilhena+-+RO,+76985-320"
+                           target="_blank" rel="noopener noreferrer"
+                           class="gold-btn text-obsidian-950 font-display font-bold uppercase tracking-wider text-xs py-4 px-4 rounded-xl inline-flex items-center justify-center gap-2 text-center shadow-lg">
+                            <i class="fa-solid fa-diamond-turn-right text-base"></i>
+                            Traçar Rota no Google Maps
+                        </a>
+                        <a href="https://instagram.com/diegobarroso4"
+                           target="_blank" rel="noopener noreferrer"
+                           class="bg-obsidian-900 hover:bg-zinc-800 text-white border border-zinc-700 font-display font-bold uppercase tracking-wider text-xs py-4 px-4 rounded-xl inline-flex items-center justify-center gap-2 text-center transition">
+                            <i class="fa-brands fa-instagram text-copper-400 text-base"></i>
+                            Instagram @diegobarroso4
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ COMPLETO -->
+    <footer class="bg-obsidian-950 border-t border-zinc-800/90 pt-14 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-10 pb-10 border-b border-zinc-800/80">
+                <!-- Coluna 1: Marca -->
+                <div class="space-y-3">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-gold-400 to-copper-500 flex items-center justify-center text-obsidian-950">
+                            <i class="fa-solid fa-scissors text-sm"></i>
+                        </div>
+                        <span class="font-display font-bold text-xl tracking-wider text-white uppercase">
+                            BARBEARIA <span class="text-gold-400">DIEGO BARROSO</span>
+                        </span>
+                    </div>
+                    <p class="text-xs text-zinc-400 leading-relaxed">
+                        Referência em cortes masculinos, degradê e barboterapia em Vilhena - RO. Avaliação 5,0 estrelas com +501 avaliações no Google.
+                    </p>
+                </div>
+
+                <!-- Coluna 2: Endereço e Horário -->
+                <div class="space-y-2 text-xs text-zinc-400">
+                    <h4 class="font-display font-bold text-sm uppercase tracking-wider text-white mb-3">Localização & Horários</h4>
+                    <p><i class="fa-solid fa-location-dot text-gold-400 mr-1.5"></i> Tv. 816, 6425 - Altamira, Vilhena - RO, 76985-320</p>
+                    <p><i class="fa-regular fa-clock text-gold-400 mr-1.5"></i> Seg a Sex: 08:30–12:00 e 14:00–19:00</p>
+                    <p><i class="fa-regular fa-clock text-copper-400 mr-1.5"></i> Sábado: 08:30–12:00 | Domingo: Fechado</p>
+                </div>
+
+                <!-- Coluna 3: Redes e Contato -->
+                <div class="space-y-3">
+                    <h4 class="font-display font-bold text-sm uppercase tracking-wider text-white">Agendamento & Redes</h4>
+                    <div class="flex flex-col gap-2.5 text-xs">
+                        <a href="https://wa.me/5569993281504?text=Ol%C3%A1%20Diego!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio."
+                           target="_blank" rel="noopener noreferrer"
+                           class="inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 font-semibold transition">
+                            <i class="fa-brands fa-whatsapp text-base"></i>
+                            WhatsApp: (69) 99328-1504
+                        </a>
+                        <a href="https://instagram.com/diegobarroso4"
+                           target="_blank" rel="noopener noreferrer"
+                           class="inline-flex items-center gap-2 text-gold-400 hover:text-gold-300 font-semibold transition">
+                            <i class="fa-brands fa-instagram text-base"></i>
+                            Instagram: @diegobarroso4
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-zinc-500">
+                <p>&copy; <span id="year"></span> Barbearia Diego Barroso. Todos os direitos reservados.</p>
+                <p>Vilhena - Rondônia • 5,0 ★ no Google</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÃO FLUTUANTE WHATSAPP -->
+    <a href="https://wa.me/5569993281504?text=Ol%C3%A1%20Diego!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Barbearia%20Diego%20Barroso."
+       target="_blank" rel="noopener noreferrer"
+       aria-label="Agendar pelo WhatsApp (69) 99328-1504"
+       class="fixed bottom-6 right-6 z-50 wa-pulse w-16 h-16 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center text-3xl shadow-2xl transition-transform hover:scale-105">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- SCRIPTS DE INTERATIVIDADE -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('year').textContent = new Date().getFullYear();
+            checkBusinessStatus();
+        });
+
+        // Ajusta opções de turno quando o cliente escolhe Sábado (somente manhã)
+        function updateShiftOptions() {
+            const day = document.getElementById('day-select').value;
+            const shiftSelect = document.getElementById('shift-select');
+
+            if (day === 'Sábado') {
+                shiftSelect.innerHTML = '<option value="Manhã (Sábado: 08:30 às 12:00)">Manhã (Sábado: 08:30 às 12:00)</option>';
+            } else {
+                shiftSelect.innerHTML = `
+                    <option value="Manhã (entre 08:30 e 12:00)">Manhã (entre 08:30 e 12:00)</option>
+                    <option value="Tarde (entre 14:00 e 19:00)">Tarde (entre 14:00 e 19:00)</option>
+                `;
+            }
+        }
+
+        // Envia mensagem formatada do Agendador Rápido para o WhatsApp oficial (69) 99328-1504
+        function handleBookingSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('client-name').value.trim();
+            const service = document.getElementById('service-select').value;
+            const day = document.getElementById('day-select').value;
+            const shift = document.getElementById('shift-select').value;
+            const notes = document.getElementById('booking-notes').value.trim();
+
+            if (!name) return;
+
+            let message = `Olá Diego! Gostaria de agendar um horário na *Barbearia Diego Barroso*:\n\n`;
+            message += `👤 *Nome:* ${name}\n`;
+            message += `✂️ *Serviço:* ${service}\n`;
+            message += `📅 *Dia:* ${day}\n`;
+            message += `⏰ *Turno:* ${shift}`;
+            if (notes) {
+                message += `\n📝 *Obs:* ${notes}`;
+            }
+
+            const encoded = encodeURIComponent(message);
+            window.open(`https://wa.me/5569993281504?text=${encoded}`, '_blank', 'noopener,noreferrer');
+        }
+
+        // Copia endereço completo com fallback seguro para iframe
+        function copyAddress() {
+            const addressText = 'Tv. 816, 6425 - Altamira, Vilhena - RO, 76985-320';
+            const tempInput = document.createElement('textarea');
+            tempInput.value = addressText;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            const label = document.getElementById('copy-address-text');
+            label.textContent = 'Endereço copiado!';
+            setTimeout(() => {
+                label.textContent = 'Copiar endereço completo';
+            }, 2500);
+        }
+
+        // Indicador dinâmico de funcionamento (Fuso de Rondônia UTC-4)
+        function checkBusinessStatus() {
+            const badge = document.getElementById('live-status-badge');
+            if (!badge) return;
+
+            const now = new Date();
+            // Converte para horário de Rondônia (America/Porto_Velho / UTC-4)
+            const roTime = new Date(now.toLocaleString('en-US', { timeZone: 'America/Porto_Velho' }));
+            const day = roTime.getDay(); // 0 = Dom, 1-5 = Seg-Sex, 6 = Sáb
+            const minutes = roTime.getHours() * 60 + roTime.getMinutes();
+
+            let isOpen = false;
+            if (day >= 1 && day <= 5) {
+                // Seg a Sex: 08:30 (510) às 12:00 (720) e 14:00 (840) às 19:00 (1140)
+                if ((minutes >= 510 && minutes < 720) || (minutes >= 840 && minutes < 1140)) {
+                    isOpen = true;
+                }
+            } else if (day === 6) {
+                // Sábado: 08:30 (510) às 12:00 (720)
+                if (minutes >= 510 && minutes < 720) {
+                    isOpen = true;
+                }
+            }
+
+            if (isOpen) {
+                badge.className = 'inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400 mt-0.5';
+                badge.innerHTML = '<span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Aberto agora em Vilhena';
+            } else {
+                badge.className = 'inline-flex items-center gap-1.5 text-xs font-semibold text-amber-400 mt-0.5';
+                badge.innerHTML = '<span class="w-2 h-2 rounded-full bg-amber-400"></span> Agende seu próximo horário pelo WhatsApp';
+            }
+        }
+    </script>
+</body>
+</html>
